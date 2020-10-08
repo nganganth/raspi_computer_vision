@@ -1,0 +1,45 @@
+Hardware Requirements: 
+
+Raspberry Pi: Pi 1 Model B 2011.12
+Camera module 
+
+Phase 1: <2 days> 
+- Set up Ras Pi for the first time 
+- Test Camera
+---------------------------------------------
+https://www.raspberrypi.org/documentation/configuration/camera.md
+sudo apt update 
+sudo apt full-upgrade
+
+sudo raspi-config 
+Select Interfacing Options and then enable the camera 
+
+raspistill -v -o test.jpg
+
+Phase 2: <2 weeks>
+- Install Open CV
+- Face recognition/Object Detection using Python 
+https://realpython.com/face-recognition-with-python/
+https://www.pyimagesearch.com/2018/06/25/raspberry-pi-face-recognition/
+https://www.miai.vn/2020/07/04/co-ban-ve-object-detection-voi-r-cnn-fast-r-cnn-faster-r-cnn-va-yolo/
+
+Phase 3: <2 weeks>
+- Install and create a DB: we might use SQLite
+https://medium.com/@usama0455/sqlite-database-on-a-raspberry-pi-best-db-for-iot-8ddc0f9eb4fa
+- Save camera records in DB and will be deleted after x days 
+
+Phase 4: 
+- Set up a web server on Ras Pi 
+https://opensource.com/article/17/3/building-personal-web-server-raspberry-pi-3
+https://readwrite.com/2014/06/27/raspberry-pi-web-server-website-hosting/
+- Display a stream video on Web
+- Dipslay a stream video on Mobile
+
+Phase 5: Integrated
+- Receive others sensor data ( Bluetooth or SPI or I2C)
+- Store the received data in DB 
+- Display the received data in Web and Mobile 
+
+Phase 6: Others
+- Learn about Node.js on Ras Pi 
+https://www.w3schools.com/nodejs/nodejs_raspberrypi_webserver_websocket.asp
